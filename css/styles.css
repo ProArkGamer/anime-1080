@@ -1,6 +1,17 @@
 #activar ~ .desplegable {display: none;overflow: hidden;}
 #activar:checked ~ .desplegable {display: block;}
 
+
+footer {
+      text-align: center;
+      padding: 3px;
+      background-color: DarkSalmon;
+      color: white;
+      display: block;
+      margin-top: 200px;
+      font-size: 17px;
+}
+
 .image-fondo {
     background-image: url("../index-slider-img/halloween_pagina2.jpg");
     margin-bottom: 10px;
