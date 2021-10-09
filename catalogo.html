@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Catalogo Animes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+
+        #myTable {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 18px;
+        }
+
+        #myTable th,
+        #myTable td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        #myTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myTable tr.header,
+        #myTable tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 
 <body>
+
     <div id="header" style="height: 50px;">
         <nav>
             <ul>
@@ -19,27 +55,106 @@
             </ul>
         </nav>
     </div>
-    <div class="card">
-        <a href="k-on/k-on.html"><img src="k-on//k-on images/yui-blueray1.jpg" alt="Avatar"
-                style="width: 40%">
-            <div class="container" style="margin-bottom: 30px;">
-                <h1><b>K-On!</b></h1>
-            </div>
-    </div>
-    <div class="card">
-        <a href="made in abyss/mia.html"><img src="made in abyss/made-in-abyss images/made in abyss tomo 1.jpg"
-                alt="Avatar" style="width: 40%">
-            <div class="container" style="margin-bottom: 30px;">
-                <h1><b>Made In Abyss</b></h1>
-            </div>
-    </div>
-    <div class="card">
-        <a href="monogatari/bakemonogatari/bakemonogatari.html"><img src="/monogatari/monogatari_images/Bakemonogatari_cover.jpg"
-                alt="Avatar" style="width: 40%">
-            <div class="container" style="margin-bottom: 30px;">
-                <h1><b>Monogatari</b></h1>
-            </div>
-    </div>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busca por nombres..." title="Escribe un nombre">
+
+    <table id="myTable">
+        <tr class="header">
+            <th>Nombre</th>
+            <th>Portada</th>
+
+        </tr>
+        <tr>
+            <td>
+                <p
+                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <strong>
+                        K-On!</strong>
+                </p>
+            </td>
+            <td><a href="k-on/k-on.html"><img src="/k-on/k-on images/k-on 1.jpg" style="height: 400px;"></a></td>
+        </tr>
+        <tr>
+            <td>
+                <p
+                    style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <strong>Bakemonogatari</strong>
+                </p>
+            </td>
+            <td>
+                <a href="monogatari/bakemonogatari/bakemonogatari.html"><img
+                        src="/monogatari/monogatari_images/Bakemonogatari_cover.jpg" style="height: 400px;">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p
+                    style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <strong>
+                        Made in Abyss</strong>
+                </p>
+            </td>
+            <td><a href="made in abyss/mia.html"><img src="made in abyss/made-in-abyss images/made in abyss tomo 1.jpg"
+                        style="height: 400px;"></a></td>
+        </tr>
+        <tr>
+            <td>
+                <p
+                    style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <strong>Nisemonogatari</strong>
+                </p>
+            </td>
+            <td>
+                <a href="/monogatari/nisemonogatari/nisemonogatari.html"><img
+                        src="/monogatari/monogatari_images/nisemonogatari.jpg" style="height: 400px;">
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <p
+                    style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <strong>
+                        Haruhi Suzumiya no Yuuta</strong>
+                </p>
+            </td>
+            <td><a href="haruhi_suzumiya/haruhi_suzumiya.html"><img
+                        src="/haruhi_suzumiya/haruhi_suzumiya_images/haruhi_suzumiya_cover.jpg"
+                        style="height: 400px; padding: 15px"></a></td>
+        </tr>
+        <tr>
+            <td>
+                <p
+                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                    <strong>
+                        K-On!!</strong>
+                </p>
+            </td>
+            <td><a href="k-on/k-on-season2.html"><img src="/k-on/k-on images/k-on! 2.jpg" style="height: 400px;"></a></td>
+        </tr>
+    </table>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
 </body>
 
 </html>
