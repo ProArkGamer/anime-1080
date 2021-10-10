@@ -12,6 +12,7 @@ footer {
       font-size: 17px;
 }
 
+/* CABECERA INDEX 1 */
 .image-fondo {
     background-image: url("../index-slider-img/halloween_pagina2.jpg");
     margin-bottom: 10px;
@@ -25,6 +26,24 @@ footer {
   text-shadow: #111 10px 10px 10px;
   font-size: 52px;
 }
+
+/* CABECERA INDEX 2 */
+.image-fondo-2 {
+      background-image: url("../index-slider-img/campo_soleado.jpg");
+      margin-bottom: 10px;
+      margin-top: 100px;
+  }
+  .cabecera-2{
+    color: rgb(255, 255, 255);
+    height: auto;
+    line-height: auto;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: #111 10px 10px 10px;
+    font-size: 40px;
+}
+
+/* INDEX NORMAL */
 
 body{
     font-family: 'sans-serif';
@@ -72,7 +91,7 @@ nav li{
       width:150px;
       height:30px;
       padding:5px 10px;
-      background-color:rgb(73, 67, 67);
+      background-color:rgb(94, 110, 206);
       border:1px solid #000;
       text-align:center;
       color:#fff;
