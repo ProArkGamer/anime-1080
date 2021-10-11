@@ -25,22 +25,82 @@
         <p style="font-size: 21px;">K-on! es el mejor anime que existe y que existira asi que tienes que verlo >:)</p>
     </div>
     <div style="margin: 25px;">
-        <button type="button" style="font-size: 20px;"><a href="/k-on/k-on.html">Temporada 1</a></button>
-        <button type="button" style="font-size: 20px;"><a href="/k-on/k-on-season2.html">Temporada 2</a></button>
-        <button type="button" style="font-size: 20px;"><a href="/k-on/k-on-movie.html">Pelicula</a></button>
-        <button type="button" style="font-size: 20px;"><a href="/k-on/k-on-endings.html">Endings</a></button>
+        <a href="/k-on/k-on.html" class="button">Temporada 1</a>
+        <a href="/k-on/k-on-season2.html" class="button">Temporada 2</a>
+        <a href="/k-on/k-on-movie.html" class="button">Película</a>
+        <a href="/k-on/k-on-endings.html" class="button">Endings</a>
     </div>
-    <div>
-        <iframe width="390" height="219" src="https://www.youtube.com/embed/8aEtdYgYaew" title="YouTube video player"
+    <div style="margin-left: 25px; margin-bottom: 15px;">
+        <button type="button" onclick="mostrar1()" style="      background-color: #db4141;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition-duration: 0.4s;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">MEGA</button>
+
+        <button type="button" onclick="mostrar2()" style="background-color: #db4141;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 12px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        transition-duration: 0.4s;
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Youtube</button>
+    </div>
+    <div id="mega">
+        <iframe width="390" height="219" frameborder="0"
+            src="https://mega.nz/embed/TR0hGYDB#6IvcHjA9WdlJ4Vv1YdqzgKL5UvRRhEuNtiTNa9Ccbgc" allowfullscreen></iframe>
+        <iframe width="390" height="219" frameborder="0"
+            src="https://mega.nz/embed/KIN0SDTL#cYi0LJE5TtLz7eSV3S2Uo2iQZwswUfpzx3IlZh-rePg" allowfullscreen></iframe>
+        <iframe width="390" height="219" frameborder="0"
+            src="https://mega.nz/embed/LUVEjZzQ#FTX6n6akelG11BEbLys9AmmKxUGlcpWziBIYWJOpp-g" allowfullscreen></iframe>
+
+    </div>
+    <div id="yt">
+        <iframe width="390" height="219" src="https://www.youtube.com/embed/_QYlMSDHVUw" title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe></li>
+            allowfullscreen></iframe>
     </div>
+
+    <script>
+        window.addEventListener("load", mostrar2);
+        function mostrar2() {
+            var x = document.getElementById('yt');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script>
+        window.addEventListener("load", mostrar1);
+        function mostrar1() {
+            var x = document.getElementById('mega');
+            if (x.style.display === 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+
 </body>
-<footer>
+<footer style="margin-top: 300px;">
     <p><strong>Hoy es un buen dia!</strong></p>
     <p>Si te gusta esta pagina puede decirmelo enviando un email a:</p>
     <p><i>ramonnicolaspons@gmail.com</i></p>
     <p>Tambien puedes sugerir modificaciones y series! Solo envia un correo B)</p>
 </footer>
+
 </html>

@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime para la Familia</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/spoiler.css">
     <style>
         body {
-            background-color: rgb(225, 228, 146);
+            background-color: rgb(204, 204, 185);
+        }
+
+        html {
+            background: url(/index-slider-img/halloween_pagina.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
     </style>
 </head>
 
-<body>
+<body style="padding-left: 50px; padding-right: 50px;">
     <div id="header" style="height: 50px;">
         <nav>
             <ul>
@@ -30,12 +35,22 @@
         <h1>Inicio</h1>
     </div>
 
-    <!-- APARTADO 1 -->
+    <!-- APARTADO 1 / NOTICIAS -->
 
     <div>
         <h1
             style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(255, 255, 255); font-size: 35px; margin-bottom: 5px;">
-            <i>Noticias</i></h1>
+            <i>Noticias</i>
+        </h1>
+    </div>
+    <div class="tab">
+        <input id="tab-5" type="checkbox" name="tabs">
+        <label for="tab-5">(11/10/2021) Mas Series!</label>
+        <div class="tab-content">
+            <p>Ya hay muchas series disponibles por si quereis ir a verlas, dentro de poco subire todo lo que queda de
+                Made in Abyss + la película.</p>
+            <img src="/index-slider-img/houseki_uwu.jpg" width="1000px" style="margin-left: 150px;">
+        </div>
     </div>
     <div class="tab">
         <input id="tab-4" type="checkbox" name="tabs">
@@ -84,7 +99,7 @@
         </div>
     </div>
 
-    <!-- APARTADO 2 -->
+    <!-- APARTADO 2 / GALEIRA -->
 
     <div class="image-fondo-2 cabecera-2" style="margin-bottom: 50px;">
         <h1>Galeria</h1>
@@ -96,8 +111,8 @@
     <img src="/index-slider-img/popopoka_halloween_gif.gif" alt="auto">
     <img src="/index-slider-img/mio_saken_gif.gif" alt="auto">
 
-    <div style="margin-top:50px;">
-        <img src="/index-slider-img/campo_soleado.jpg" width="1200px">
+    <div style="margin-top:20px;">
+        <img src="/index-slider-img/koe_no_katachi.jpg" width="1075px">
     </div>
 </body>
 
