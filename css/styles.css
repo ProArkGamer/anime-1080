@@ -75,7 +75,7 @@ body{
     width: 1200px;
     padding: auto;
     margin-right: auto;
-    background-color: #7ccbdf;
+    background-color: #4ebeda;
     margin-left: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -106,12 +106,13 @@ nav a{
       text-decoration:none;
       color:inherit;
       font-size:20px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       }
             
 nav li{
       display:inline-block;
       width:150px;
-      height:30px;
+      height:35px;
       padding:5px 10px;
       background-color:rgb(94, 110, 206);
       border:1px solid #000;
