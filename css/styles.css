@@ -8,7 +8,12 @@ footer {
       font-size: 17px;
 }
 
-/* TEMA BOTONES GLOBALES */
+div{
+      width: 80%;
+      margin: auto;
+}
+
+/* BOTONES GLOBALES */
 
 .button {
       background-color: #4CAF50;
@@ -72,13 +77,7 @@ h1 {
 
 body{
     font-family: 'sans-serif';
-    width: 1200px;
-    padding: auto;
-    margin-right: auto;
-    background-color: #4ebeda;
-    margin-left: auto;
-    margin-top: 0;
-    margin-bottom: 0;
+    background-color: #8accdd;
 }
 
 * {
@@ -112,7 +111,7 @@ nav li{
       width:150px;
       height:35px;
       padding:5px 10px;
-      background-color:rgb(94, 110, 206);
+      background-color:#8fb59e;
       border:1px solid #000;
       text-align:center;
       color:#fff;
