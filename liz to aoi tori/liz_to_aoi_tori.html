@@ -1,21 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/styles.css">
-    <title>Liz to Aoi Tori index</title>
+    <link rel="stylesheet" href="/css/spoiler.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: rgb(204, 204, 185);
+        }
+
+        div {
+            width: 95%;
+        }
+
+
+
+        nav li {
+
+            background-color: #8fb59e;
+
+        }
+
+        /* */
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: rgb(255, 55, 29);
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: rgb(250, 154, 125);
+            /* Add a dark-grey background on hover */
+        }
+
+        /* Oscurecer el boton cuando pasa el raton */
+        .btn:hover {
+            background-color: rgb(126, 158, 255);
+        }
+
+        #more {
+            display: none;
+        }
+
+        #myBtn2 {
+
+            background-color: #b14b48;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 7px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition-duration: 0.4s;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100%;
+        }
+
+        #myBtn2:hover {
+            background-color: #dd7370;
+        }
+    </style>
 </head>
 
-<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+
+<body style="width: 65%; margin: auto;">
     <div id="header" style="height: 50px;">
         <nav>
             <ul>
                 <li><a href="/index.html">Inicio</a></li>
                 <li><a href="/catalogo.html">Catalogo</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="cerrado_temporalmente.html">Contacto</a></li>
             </ul>
         </nav>
     </div>
@@ -35,16 +126,45 @@
     <div style="margin: 25px;">
         <a href="/liz to aoi tori/liz_to_aoi_tori.html" class="button">Película</a>
     </div>
-    <div style="margin-left:225px">
-        <iframe width="720" height="402" frameborder="0"
-            src="https://mega.nz/embed/rV8wQKbR#BKgSJWxUfHkNjwjNIUxsqYO-xq4j4x2RLZCq8Q5FoSM" allowfullscreen></iframe>
+
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+
+    <div style="margin-left:25px;width: 100%;margin-top: 10px;">
+        <div style="margin-left:225px">
+            <iframe width="720" height="402" frameborder="0"
+                src="https://mega.nz/embed/rV8wQKbR#BKgSJWxUfHkNjwjNIUxsqYO-xq4j4x2RLZCq8Q5FoSM"
+                allowfullscreen></iframe>
+        </div>
     </div>
+
+    <footer>
+        <p><strong>Hoy es un buen dia!</strong></p>
+        <p>Si te gusta esta pagina puede decirmelo enviando un email a:</p>
+        <p><i>ramonnicolaspons@gmail.com</i></p>
+        <p>Tambien puedes sugerir modificaciones y series! Solo envia un correo B)</p>
+    </footer>
+
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
 </body>
-<footer>
-    <p><strong>Hoy es un buen dia!</strong></p>
-    <p>Si te gusta esta pagina puede decirmelo enviando un email a:</p>
-    <p><i>ramonnicolaspons@gmail.com</i></p>
-    <p>Tambien puedes sugerir modificaciones y series! Solo envia un correo B)</p>
-</footer>
 
 </html>

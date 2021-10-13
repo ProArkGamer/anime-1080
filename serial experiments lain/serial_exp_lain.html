@@ -15,13 +15,7 @@
             width: 95%;
         }
 
-        html {
-            background: url(/index-slider-img/halloween_pagina.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
+
 
         nav li {
 
@@ -77,6 +71,30 @@
         .btn:hover {
             background-color: rgb(126, 158, 255);
         }
+
+        #more {
+            display: none;
+        }
+
+        #myBtn2 {
+
+            background-color: #b14b48;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            padding: 7px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition-duration: 0.4s;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            width: 100%;
+        }
+
+        #myBtn2:hover {
+            background-color: #dd7370;
+        }
     </style>
 </head>
 
@@ -107,6 +125,9 @@
     <div style="margin-top: 20px;">
         <a href="/serial experiments lain/serial_exp_lain.html" class="button">Temporada 1</a>
     </div>
+
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+
     <div style="margin-left:25px;width: 100%;margin-top: 10px;">
         <iframe width="390" height="219" frameborder="0"
             src="https://mega.nz/embed/bktx3AoS#wCspUcCaKSbUgBZk1fjiHjzvtHQyhpwPY0a9hbP4BLY" allowfullscreen></iframe>
@@ -120,26 +141,81 @@
             src="https://mega.nz/embed/C9kA2A5a#6oDeKgZl-dMdhfXAipO3uTCR2EsLjwM_jNqyq9lau1I" allowfullscreen></iframe>
         <iframe width="390" height="219" frameborder="0"
             src="https://mega.nz/embed/fo1DGSTC#B7yulN2O46b8bsqigpOPOjb3yOTxlplSgbREo2MO6Zw" allowfullscreen></iframe>
-        <iframe width="390" height="219" frameborder="0"
-            src="https://mega.nz/embed/zl9yzA7I#C1Ye-mW-VRRdIRKxeVdZRMWfCxf5BxjQhws_WXF_CF8" allowfullscreen></iframe>
-        <iframe width="390" height="219" frameborder="0"
-            src="https://mega.nz/embed/atkAUaaA#A2SJm3ypBQHn1mPNY_Zc1Z7JPWPS-N2AJr5EQ1Y1kzI" allowfullscreen></iframe>
-        <iframe width="390" height="219" frameborder="0"
-            src="https://mega.nz/embed/uwkkBKBY#q0ESOChEh_PMOyRXMt8O6C57jrtbaf-BNLG3Jfzj3NY" allowfullscreen></iframe>
-        <iframe width="390" height="219" frameborder="0"
-            src="https://mega.nz/embed/a98CSK6Q#aiVA-DBAJBOhBZnqzi7uqSHL3HQf2pG7-6uoNl-jfy4" allowfullscreen></iframe>
-        <iframe width="390" height="219" frameborder="0"
-            src="https://mega.nz/embed/v5lzTAiT#L4priiYezwMBC-JB7hEE75pWLamPxMHBnOTLcH9icSI" allowfullscreen></iframe>
-        <iframe width="390" height="219" frameborder="0"
-            src="https://mega.nz/embed/n99EDQwD#-tHW_U8PwG8VCsXmhdONRBCdA9pS8c8C-tUOZcQHj7Y" allowfullscreen></iframe>
-        <iframe width="390" height="219" frameborder="0"
-            src="https://mega.nz/embed/qwlyQYDB#zN4Ztd_tHbj3xTO5AQnoeCNwReGm0rJeB_3qhlJtKnE" allowfullscreen></iframe>
+        <span id="dots"></span>
+        <span id="more">
+            <iframe width="390" height="219" frameborder="0"
+                src="https://mega.nz/embed/zl9yzA7I#C1Ye-mW-VRRdIRKxeVdZRMWfCxf5BxjQhws_WXF_CF8"
+                allowfullscreen></iframe>
+            <iframe width="390" height="219" frameborder="0"
+                src="https://mega.nz/embed/atkAUaaA#A2SJm3ypBQHn1mPNY_Zc1Z7JPWPS-N2AJr5EQ1Y1kzI"
+                allowfullscreen></iframe>
+            <iframe width="390" height="219" frameborder="0"
+                src="https://mega.nz/embed/uwkkBKBY#q0ESOChEh_PMOyRXMt8O6C57jrtbaf-BNLG3Jfzj3NY"
+                allowfullscreen></iframe>
+            <iframe width="390" height="219" frameborder="0"
+                src="https://mega.nz/embed/a98CSK6Q#aiVA-DBAJBOhBZnqzi7uqSHL3HQf2pG7-6uoNl-jfy4"
+                allowfullscreen></iframe>
+            <iframe width="390" height="219" frameborder="0"
+                src="https://mega.nz/embed/v5lzTAiT#L4priiYezwMBC-JB7hEE75pWLamPxMHBnOTLcH9icSI"
+                allowfullscreen></iframe>
+            <iframe width="390" height="219" frameborder="0"
+                src="https://mega.nz/embed/n99EDQwD#-tHW_U8PwG8VCsXmhdONRBCdA9pS8c8C-tUOZcQHj7Y"
+                allowfullscreen></iframe>
+            <iframe width="390" height="219" frameborder="0"
+                src="https://mega.nz/embed/qwlyQYDB#zN4Ztd_tHbj3xTO5AQnoeCNwReGm0rJeB_3qhlJtKnE"
+                allowfullscreen></iframe>
+        </span>
     </div>
+    <div>
+        <button onclick="myFunction()" id="myBtn2">Ver Mas</button>
+    </div>
+
     <footer>
         <p><strong>Hoy es un buen dia!</strong></p>
         <p>Si te gusta esta pagina puede decirmelo enviando un email a:</p>
         <p><i>ramonnicolaspons@gmail.com</i></p>
         <p>Tambien puedes sugerir modificaciones y series! Solo envia un correo B)</p>
     </footer>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn2");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Ver Mas";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Ver Menos";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+</body>
 
 </html>

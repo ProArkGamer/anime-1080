@@ -13,6 +13,14 @@ div{
       margin: auto;
 }
 
+html {
+      background: url(/index-slider-img/halloween_pagina.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+
 /* BOTONES GLOBALES */
 
 .button {
@@ -77,7 +85,9 @@ h1 {
 
 body{
     font-family: 'sans-serif';
-    background-color: #8accdd;
+    background-color: rgb(204, 204, 185);
+    width: 65%;
+    margin: auto;
 }
 
 * {
