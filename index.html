@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/spoiler.css">
+    <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
@@ -19,12 +20,12 @@
             background-size: cover;
         }
 
-        nav li {
+       /* nav li {
 
             background-color: #8fb59e;
 
         }
-
+*/
         /* */
         .btn {
             background-color: DodgerBlue;
@@ -79,12 +80,12 @@
 <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
 
 <body style="width: 65%; margin: auto;">
-    <div id="header" style="height: 50px;">
-        <nav>
-            <ul>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/catalogo.html">Catalogo</a></li>
-                <li><a href="cerrado_temporalmente.html">Contacto</a></li>
+    <div class="page" style="margin-bottom: 20px;">
+        <nav class="page__menu menu">
+            <ul class="menu__list r-list">
+                <li class="menu__group"><a href="/index.html" class="menu__link r-link text-underlined">Inicio</a></li>
+                <li class="menu__group"><a href="/catalogo.html" class="menu__link r-link text-underlined">Catalogo</a></li>
+                <li class="menu__group"><a href="/xd.html" class="menu__link r-link text-underlined">Algo</a></li>
             </ul>
         </nav>
     </div>
