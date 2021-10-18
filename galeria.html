@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        div {
+            width: 92%;
+        }
+
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    </style>
+    <title>Archivo</title>
+</head>
+
+<body style="width: 65%; margin: auto;">
+    <div class="page" style="margin-bottom: 20px;">
+        <nav class="page__menu menu">
+            <ul class="menu__list r-list">
+                <li class="menu__group"><a href="/index.html" class="menu__link r-link text-underlined">Inicio</a></li>
+                <li class="menu__group"><a href="/catalogo.html" class="menu__link r-link text-underlined">Catalogo</a>
+                </li>
+                <li class="menu__group"><a href="/xd.html" class="menu__link r-link text-underlined">Archivo</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <form>
+            <input type="button" value="Atrás" onclick="history.back()" style="background-color: #ca5d59; border: none;border-radius: 8px;color: white;padding: 7px 20px;text-align: center;display: inline-block;font-size: 18px; margin-bottom: 10px;">
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" style="margin: 0;"></script>
+    <section class="section" style="margin: 0;">
+        <div class="container" style="margin: 0; width: auto;">
+            <div class="port portfolio-masonry mt-4" style="margin: 0;width: auto;">
+                <div class="portfolioContainer row photo" style="margin: 0;width: auto;">
+                    <div class="col-lg-4 p-4 branding photo" style="margin: 0;width: auto;">
+                        <div class="item-box">
+                            <a class="mfp-image" href="/index-slider-img/halloween_pagina.jpg" title="Hola">
+                                <img class="item-container img-fluid" src="/index-slider-img/halloween_pagina.jpg"
+                                    width="400px"></a>
+                            <a class="mfp-image" href="/index-slider-img/halloween_pagina2.jpg" title="Hola">
+                                <img class="item-container img-fluid" src="/index-slider-img/halloween_pagina2.jpg"
+                                    width="350px"></a>
+                            <a class="mfp-image" href="/index-slider-img/mio_saken_gif.gif" title="Hola">
+                                <img class="item-container img-fluid" src="/index-slider-img/mio_saken_gif.gif"
+                                    width="350px"></a>
+                            <a class="mfp-image" href="/index-slider-img/kaneki_1.jpg" title="Hola">
+                                <img class="item-container img-fluid" src="/index-slider-img/kaneki_1.jpg"
+                                    width="390px"></a>
+                        </div>
+                    </div>
+    </section>
+    <div style="width: 90%;">
+        <button class="btn"><i class="fa fa-download"><a
+                    href="https://www.mediafire.com/file/jdtr46jukm15apy/%255BR8-Audio%255D_TV%25E3%2582%25A2%25E3%2583%258B%25E3%2583%25A1_STEINS%253BGATE_OP_%25E3%2580%258CHacking_to_the_Gate%25E3%2580%258D%255BDVD%25E4%25BB%2598%25E5%2588%259D%25E5%259B%259E%25E9%2599%2590%25E5%25AE%259A%25E7%259B%25A4%255D%25EF%25BC%258F%25E3%2581%2584%25E3%2581%25A8%25E3%2581%2586%25E3%2581%258B%25E3%2581%25AA%25E3%2581%2593_%2528320kbps%252BScans_rev%2529.rar/file"
+                    download="TVアニメ STEINS;GATE OP 「Hacking to the Gate」[DVD付初回限定盤]／いとうかなこ (320kbps+Scans rev).rar"
+                    style="text-decoration: none;"></i> Descargar</a></button>
+    </div>
+    
+</body>
+
+<script>
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+<footer>
+    <p><strong>Hoy es un buen dia!</strong></p>
+    <p>Si te gusta esta pagina puede decirmelo enviando un email a:</p>
+    <p><i>ramonnicolaspons@gmail.com</i></p>
+    <p>Tambien puedes sugerir modificaciones y series! Solo envia un correo B)</p>
+</footer>
+
+
+</html>
