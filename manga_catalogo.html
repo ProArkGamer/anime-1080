@@ -68,14 +68,9 @@
                 <li class="menu__group"><a href="/catalogo.html" class="menu__link r-link text-underlined">Catalogo</a>
                 </li>
                 <li class="menu__group"><a href="/xd.html" class="menu__link r-link text-underlined">Algo</a></li>
-                <li class="menu__group"><a href="" class="menu__link r-link text-underlined">Manga</a></li>
+                <li class="menu__group"><a href="/manga_catalogo.html" class="menu__link r-link text-underlined">Manga</a></li>
             </ul>
         </nav>
-    </div>
-
-    <div>
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busca por nombres..."
-            title="Escribe un nombre">
     </div>
 
     <div>
@@ -86,17 +81,10 @@
                 </th>
             </tr>
             <tr>
-                <td><a href="/made-in-abyss/manga/cap61.html"><img
+                <td><a href="/made-in-abyss/mia_manga.html"><img
                             src="/made-in-abyss/made-in-abyss images/made-in-abyss-6-cover.jpg"
                             style="height: 400px;float: left;"></a>
                     <p style="margin-top: 180px;font-size: 30px;">ㅤMade in Abyss</p>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="haruhi_suzumiya/haruhi_suzumiya.html"><img
-                            src="/haruhi_suzumiya/haruhi_suzumiya_images/haruhi_suzumiya_cover.jpg"
-                            style="height: 400px;float: left"></a>
-                    <p style="margin-top: 180px;font-size: 30px;">ㅤHaruhi</p>
                 </td>
             </tr>
         </table>
@@ -110,14 +98,8 @@
             </tr>
             <tr>
 
-                <td><a href="/kimetsu/kimetsu-1.html"><img src="/kimetsu/kimetsu-img/kimetsu_season1_portada.png"
-                            style="height: 400px;float: left;"></a><p style="margin-top: 180px;font-size: 30px;">ㅤHaruhi</p></td>
-            </tr>
-            <tr>
-
-                <td><a href="k-on/k-on-season2.html"><img src="/k-on/k-on images/k-on! 2.jpg"
-                            style="height: 400px;float: left;"></a><p style="margin-top: 180px;font-size: 30px;">ㅤTokyo Ghoul</p>
-                </td>
+                <td><a href="/kusuriya-ni-hitorigoto/kusuriya.html"><img src="/kusuriya-ni-hitorigoto/kusuriya-img/kusuriya-no-hitorigoto-cover.jpg"
+                            style="height: 400px;float: left;"></a><p style="margin-top: 180px;font-size: 30px;">Kusuriya no Hitorigoto</p></td>
             </tr>
         </table>
     </div>
@@ -128,27 +110,6 @@
         <p><i>ramonnicolaspons@gmail.com</i></p>
         <p>Tambien puedes sugerir modificaciones y series! Solo envia un correo B)</p>
     </footer>
-
-    <script>
-        function myFunction() {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("myInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("myTable");
-            tr = table.getElementsByTagName("tr");
-            for (i = 0; i < tr.length; i++) {
-                td = tr[i].getElementsByTagName("td")[0];
-                if (td) {
-                    txtValue = td.textContent || td.innerText;
-                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>
 
     <script>
         mybutton = document.getElementById("myBtn");
