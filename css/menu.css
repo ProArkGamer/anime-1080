@@ -135,6 +135,6 @@ DEPENDENCES
   .page{
     box-sizing: border-box;
     max-width: auto;
-    width: 35.6%;
+    width: auto;
     margin: auto;
   }
