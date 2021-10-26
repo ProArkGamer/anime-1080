@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/catalogo_manga.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Catalogo Manga</title>
+    <style>
+        body {
+            background-color: rgb(204, 204, 185);
+        }
+
+        /* */
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: rgb(255, 55, 29);
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        div {
+            width: 95%;
+        }
+    </style>
+</head>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
+
+<body style="width: 65%; margin: auto;">
+    <div class="page" style="margin-bottom: 20px;">
+        <nav class="page__menu menu">
+            <ul class="menu__list r-list">
+                <li class="menu__group"><a href="/index.html" class="menu__link r-link text-underlined">Inicio</a></li>
+                <li class="menu__group"><a href="/catalogo.html" class="menu__link r-link text-underlined">Catalogo</a>
+                </li>
+                <li class="menu__group"><a href="/xd.html" class="menu__link r-link text-underlined">Algo</a></li>
+                <li class="menu__group"><a href="/manga_catalogo.html"
+                        class="menu__link r-link text-underlined">Manga</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div>
+        <table id="myTable" style="width: 50%; margin: auto; float: left;">
+            <tr class="header" style>
+                <th>
+                    <p style="text-align:center; font-size: 20px;"></p>Manga <i>(Click en la foto para entrar)<i></p>
+                </th>
+            </tr>
+            <tr>
+                <td><a href="/made-in-abyss/mia_manga.html"><img
+                            src="/made-in-abyss/made-in-abyss images/made-in-abyss-6-cover.jpg"
+                            style="height: 400px;float: left;"></a>
+                    <p style="margin-top: 180px;font-size: 30px;">ㅤMade in Abyss</p>
+                </td>
+            </tr>
+        </table>
+
+        <table id="myTable" style="width: 50%; margin: auto;">
+            <tr class="header" style>
+
+                <th>
+                    <p style="text-align:center; font-size: 20px;"></p>Manga <i>(Click en la foto para entrar)<i></p>
+                </th>
+            </tr>
+            <tr>
+
+                <td><a href="/kusuriya-ni-hitorigoto/kusuriya.html"><img
+                            src="/kusuriya-ni-hitorigoto/kusuriya-img/kusuriya-no-hitorigoto-cover.jpg"
+                            style="height: 400px;float: left;"></a>
+                    <p style="margin-top: 180px;font-size: 30px;">Kusuriya no Hitorigoto</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p><strong>Hoy es un buen dia!</strong></p>
+        <p>Si te gusta esta pagina puede decirmelo enviando un email a:</p>
+        <p><i>ramonnicolaspons@gmail.com</i></p>
+        <p>Tambien puedes sugerir modificaciones y series! Solo envia un correo B)</p>
+    </footer>
+
+    <script>
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+</body>
+
+</html>

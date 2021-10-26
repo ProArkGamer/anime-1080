@@ -2,12 +2,10 @@
     box-sizing: border-box;
 }
 
-
-
 #myInput {
     background-position: 10px 10px;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 50%;
     font-size: 16px;
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
@@ -16,9 +14,9 @@
 
 #myTable {
     border-collapse: collapse;
-    width: 100%;
     border: 1px solid #ddd;
     font-size: 18px;
+    align-content: center;
 }
 
 #myTable th,
@@ -33,5 +31,19 @@
 
 #myTable tr.header,
 #myTable tr:hover {
-    background-color: #f1f1f1;
+    background-color: #e5e5e5;
+}
+
+.td-izq {
+    float: left;
+    margin-left: 55px;
+    margin-top: 20px;
+}
+
+.td-dere {
+    margin-left: 20px;
+}
+
+p {
+    text-align: center;
 }
