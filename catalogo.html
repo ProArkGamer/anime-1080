@@ -7,25 +7,13 @@
     <link rel="stylesheet" href="/css/menu.css">
     <title>Catalogo</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            background: url(/index-slider-img/halloween_pagina.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-        }
-
         #myInput {
             background-position: 10px 10px;
             background-repeat: no-repeat;
             width: 100%;
             font-size: 16px;
             padding: 12px 20px 12px 40px;
-            border: 1px solid #ddd;
+            border: 1px solid rgb(182, 182, 182);
             margin-bottom: 12px;
         }
 
@@ -43,219 +31,250 @@
         }
 
         #myTable tr {
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid rgb(182, 182, 182);
         }
 
         #myTable tr.header,
         #myTable tr:hover {
-            background-color: #f1f1f1;
+            background-color: #fff4dd;
         }
     </style>
 </head>
 
-<body style="width: 65%; margin: auto; background-color: rgb(204, 204, 185);">
-
-    <div class="page" style="margin-bottom: 20px;">
+<body>
+    <div class="image-fondo cabecera" style="width: 100%;">
+        <h1 style="color: white;">Catalogo</h1>
+    </div>
+    <div class="page">
         <nav class="page__menu menu">
             <ul class="menu__list r-list">
                 <li class="menu__group"><a href="/index.html" class="menu__link r-link text-underlined">Inicio</a></li>
-                <li class="menu__group"><a href="/catalogo.html" class="menu__link r-link text-underlined">Catalogo</a></li>
+                <li class="menu__group"><a href="/catalogo.html" class="menu__link r-link text-underlined">Catalogo</a>
+                </li>
                 <li class="menu__group"><a href="/xd.html" class="menu__link r-link text-underlined">Algo</a></li>
-                <li class="menu__group"><a href="/manga_catalogo.html" class="menu__link r-link text-underlined">Manga</a></li>
+                <li class="menu__group"><a href="/manga_catalogo.html"
+                        class="menu__link r-link text-underlined">Manga</a></li>
             </ul>
         </nav>
     </div>
 
-    <div>
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busca por nombres..."
-            title="Escribe un nombre">
+    <div class="page2">
+        <nav class="menu">
+            <ul>
+                <li class="menu__group">
+                    <p class="blanco titulo" style="margin-top: 40px;">Archivos</p>
+                </li>
+                <li class="menu__group">
+                    <p class="blanco">Galeria</p>
+                </li>
+                <li class="menu__group">
+                    <p class="blanco">Noticias</p>
+                </li>
+                <li class="menu__group">
+                    <p class="blanco">Comentarios</p>
+                </li>
+            </ul>
+        </nav>
     </div>
 
-    <table id="myTable" style="width: 95%; margin: auto;">
-        <tr class="header">
-            <th style="width: 60%;">
-                <p style="text-align:center; font-size: 20px;">Nombre</p>
-            </th>
-            <th style="width: 40%;">
-                <p style="text-align:center; font-size: 20px;"></p>Portada <i>(Click en la foto para entrar)<i></p>
-            </th>
+    <div class="content" style="margin-top: 10px;">
+        <div>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busca por nombres..."
+                title="Escribe un nombre">
+        </div>
 
-        </tr>
+        <table id="myTable" style="width: 95%; margin: auto;">
+            <tr class="header">
+                <th style="width: 60%;">
+                    <p style="text-align:center; font-size: 20px;">Nombre</p>
+                </th>
+                <th style="width: 40%;">
+                    <p style="text-align:center; font-size: 20px;"></p>Portada <i>(Click en la foto para entrar)<i></p>
+                </th>
 
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Naruto</strong>
-                </p>
-            </td>
-            <td><a href="/naruto/naruto.html"><img
-                        src="/naruto/naruto-img/naruto-cover.jpg" style="height: 400px;"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Specials Kimetsu No Yaiba</strong>
-                </p>
-            </td>
-            <td><a href="/kimetsu/kimetsu-1.html"><img src="/kimetsu/kimetsu-img/kimetsu_season1_portada.png"
-                        style="height: 400px;"></a></td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Sora Yorimo Tooi Basho</strong>
-                </p>
-            </td>
-            <td><a href="/sora-yorimo-tooi-basho/sora_yori.html"><img
-                        src="/sora-yorimo-tooi-basho/sora-yori-img/sora_yori_portada.jpg" style="height: 400px;"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Kimetsu no Yaiba Season 2</strong>
-                </p>
-            </td>
-            <td><a href="/kimetsu/kimetsu.html"><img
-                        src="/kimetsu/kimetsu-img/kimetsu_portada.jpg" style="height: 400px;"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Serial Experiments Lain</strong>
-                </p>
-            </td>
-            <td><a href="/serial-experiments-lain/serial_exp_lain.html"><img src="/serial-experiments-lain/serial-exp-lain-img/serial_experiment_lain_cover.jpg"
-                        style="height: 400px;"></a></td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Steins; Gate</strong>
-                </p>
-            </td>
-            <td><a href="/steins-gate/steins_gate.html"><img src="/steins-gate/steins-gate-img/Steins_Gate_portada.jpeg"
-                        style="height: 400px;"></a></td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Made in Abyss: Fukaki Tamashii no Reimei</strong>
-                </p>
-            </td>
-            <td><a href="/made-in-abyss/mia-movie.html"><img
-                        src="/made-in-abyss/made-in-abyss images/made_in_abyss_movie.jpg" style="height: 400px;"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Liz to Aoi Tori</strong>
-                </p>
-            </td>
-            <td><a href="/liz-to-aoi-tori/liz_to_aoi_tori.html"><img
-                        src="/liz-to-aoi-tori/liz_to_aoi_tori_img/liz_to_aoi_tori.jpg" style="height: 400px;"></a></td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        K-On!</strong>
-                </p>
-            </td>
-            <td><a href="k-on/k-on.html"><img src="/k-on/k-on images/k-on 1.jpg" style="height: 400px;"></a></td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>Bakemonogatari</strong>
-                </p>
-            </td>
-            <td>
-                <a href="monogatari/bakemonogatari/bakemonogatari.html"><img
-                        src="/monogatari/monogatari_images/Bakemonogatari_cover.jpg" style="height: 400px;">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Made in Abyss</strong>
-                </p>
-            </td>
-            <td><a href="made-in-abyss/mia.html"><img src="made-in-abyss/made-in-abyss images/made in abyss tomo 1.jpg"
-                        style="height: 400px;"></a></td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        K-On! The Movie</strong>
-                </p>
-            </td>
-            <td><a href="k-on/k-on-movie.html"><img src="/k-on/k-on images/k-on-the-movie.jpg"
-                        style="height: 400px;"></a></td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>Nisemonogatari</strong>
-                </p>
-            </td>
-            <td>
-                <a href="/monogatari/nisemonogatari/nisemonogatari.html"><img
-                        src="/monogatari/monogatari_images/nisemonogatari.jpg" style="height: 400px;">
-            </td>
+            </tr>
 
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        Haruhi Suzumiya no Yuuta</strong>
-                </p>
-            </td>
-            <td><a href="haruhi_suzumiya/haruhi_suzumiya.html"><img
-                        src="/haruhi_suzumiya/haruhi_suzumiya_images/haruhi_suzumiya_cover.jpg"
-                        style="height: 400px; padding: 15px"></a></td>
-        </tr>
-        <tr>
-            <td>
-                <p
-                    style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                    <strong>
-                        K-On!!</strong>
-                </p>
-            </td>
-            <td><a href="k-on/k-on-season2.html"><img src="/k-on/k-on images/k-on! 2.jpg" style="height: 400px;"></a>
-            </td>
-        </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Naruto</strong>
+                    </p>
+                </td>
+                <td><a href="/naruto/naruto.html"><img src="/naruto/naruto-img/naruto-cover.jpg"
+                            style="height: 400px;"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Specials Kimetsu No Yaiba</strong>
+                    </p>
+                </td>
+                <td><a href="/kimetsu/kimetsu-1.html"><img src="/kimetsu/kimetsu-img/kimetsu_season1_portada.png"
+                            style="height: 400px;"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Sora Yorimo Tooi Basho</strong>
+                    </p>
+                </td>
+                <td><a href="/sora-yorimo-tooi-basho/sora_yori.html"><img
+                            src="/sora-yorimo-tooi-basho/sora-yori-img/sora_yori_portada.jpg"
+                            style="height: 400px;"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Kimetsu no Yaiba Season 2</strong>
+                    </p>
+                </td>
+                <td><a href="/kimetsu/kimetsu.html"><img src="/kimetsu/kimetsu-img/kimetsu_portada.jpg"
+                            style="height: 400px;"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Serial Experiments Lain</strong>
+                    </p>
+                </td>
+                <td><a href="/serial-experiments-lain/serial_exp_lain.html"><img
+                            src="/serial-experiments-lain/serial-exp-lain-img/serial_experiment_lain_cover.jpg"
+                            style="height: 400px;"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Steins; Gate</strong>
+                    </p>
+                </td>
+                <td><a href="/steins-gate/steins_gate.html"><img
+                            src="/steins-gate/steins-gate-img/Steins_Gate_portada.jpeg" style="height: 400px;"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Made in Abyss: Fukaki Tamashii no Reimei</strong>
+                    </p>
+                </td>
+                <td><a href="/made-in-abyss/mia-movie.html"><img
+                            src="/made-in-abyss/made-in-abyss images/made_in_abyss_movie.jpg"
+                            style="height: 400px;"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Liz to Aoi Tori</strong>
+                    </p>
+                </td>
+                <td><a href="/liz-to-aoi-tori/liz_to_aoi_tori.html"><img
+                            src="/liz-to-aoi-tori/liz_to_aoi_tori_img/liz_to_aoi_tori.jpg" style="height: 400px;"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            K-On!</strong>
+                    </p>
+                </td>
+                <td><a href="k-on/k-on.html"><img src="/k-on/k-on images/k-on 1.jpg" style="height: 400px;"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>Bakemonogatari</strong>
+                    </p>
+                </td>
+                <td>
+                    <a href="monogatari/bakemonogatari/bakemonogatari.html"><img
+                            src="/monogatari/monogatari_images/Bakemonogatari_cover.jpg" style="height: 400px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Made in Abyss</strong>
+                    </p>
+                </td>
+                <td><a href="made-in-abyss/mia.html"><img
+                            src="made-in-abyss/made-in-abyss images/made in abyss tomo 1.jpg"
+                            style="height: 400px;"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            K-On! The Movie</strong>
+                    </p>
+                </td>
+                <td><a href="k-on/k-on-movie.html"><img src="/k-on/k-on images/k-on-the-movie.jpg"
+                            style="height: 400px;"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>Nisemonogatari</strong>
+                    </p>
+                </td>
+                <td>
+                    <a href="/monogatari/nisemonogatari/nisemonogatari.html"><img
+                            src="/monogatari/monogatari_images/nisemonogatari.jpg" style="height: 400px;">
+                </td>
 
-    </table>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            Haruhi Suzumiya no Yuuta</strong>
+                    </p>
+                </td>
+                <td><a href="haruhi_suzumiya/haruhi_suzumiya.html"><img
+                            src="/haruhi_suzumiya/haruhi_suzumiya_images/haruhi_suzumiya_cover.jpg"
+                            style="height: 400px; padding: 15px"></a></td>
+            </tr>
+            <tr>
+                <td>
+                    <p
+                        style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+                        <strong>
+                            K-On!!</strong>
+                    </p>
+                </td>
+                <td><a href="k-on/k-on-season2.html"><img src="/k-on/k-on images/k-on! 2.jpg"
+                            style="height: 400px;"></a>
+                </td>
+            </tr>
+
+        </table>
+    </div>
 
     <script>
         function myFunction() {

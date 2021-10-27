@@ -1,0 +1,19 @@
+.episodio {
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    align-content: center;
+}
+
+.episodio th,
+.episodio td {
+    text-align: left;
+    padding: 12px;
+}
+
+.episodio tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.episodio tr.header {
+    background-color: #ff6d6d;
+}

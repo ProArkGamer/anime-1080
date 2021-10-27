@@ -3,7 +3,7 @@
 .button {
       background-color: #4CAF50;
       border: none;
-      border-radius: 8px;
+      border-radius: 4px;
       color: white;
       padding: 7px 20px;
       text-align: center;
@@ -59,7 +59,7 @@ body{
 }
 
 .content {
-    background-color: white;
+    background-color: #fff;
     margin: 0;
     padding-top: 10px;
 }
@@ -71,7 +71,7 @@ body{
 footer {
     text-align: center;
     padding: 10px;
-    background-color: DarkSalmon;
+    background-color: #ff6d6d;
     color: white;
     display: block;
     font-size: 17px;
@@ -120,7 +120,7 @@ h1 {
 .volver {
     width: 15%;
     margin-top: 15px;
-    background-color: #fca311;
+    background-color: #ff6d6d;
     border: none;
     border-radius: 4px;
     color: rgb(0, 0, 0);
@@ -130,4 +130,26 @@ h1 {
     display: inline-block;
     transition-duration: 0.4s;
     font-size: 20px;
+}
+
+.sig {
+    width: 4%;
+    margin-top: 15px;
+    background-color: #ff6d6d;
+    border: none;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    padding: 2px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    font-size: 30px;
+}
+.sig:hover {
+    background-color: #ffbbbb;
+}
+
+.vermas {
+    margin-top: 10px;
 }
