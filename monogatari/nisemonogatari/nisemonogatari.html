@@ -6,17 +6,10 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/spoiler.css">
     <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/boton-cap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Nisemonogatari - Anime1080</title>
     <style>
-        body {
-            background-color: rgb(204, 204, 185);
-        }
-
-        div {
-            width: 95%;
-        }
-
         /* */
         .btn {
             background-color: DodgerBlue;
@@ -83,7 +76,7 @@
             transition-duration: 0.4s;
             font-size: 18px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            width: 100%;
+            width: 53.4%;
         }
 
         #myBtn2:hover {
@@ -94,64 +87,110 @@
 
 <button onclick="topFunction()" id="myBtn" title="Go to top">Arriba</button>
 
-<body style="width: 65%; margin: auto;">
-    <div class="page" style="margin-bottom: 20px;">
+<body style="width: 100%; margin: auto;">
+    <div class="page">
         <nav class="page__menu menu">
             <ul class="menu__list r-list">
                 <li class="menu__group"><a href="/index.html" class="menu__link r-link text-underlined">Inicio</a></li>
-                <li class="menu__group"><a href="/catalogo.html" class="menu__link r-link text-underlined">Catalogo</a></li>
-                <li class="menu__group"><a href="/xd.html" class="menu__link r-link text-underlined">Algo</a></li>
+                <li class="menu__group"><a href="/catalogo.html" class="menu__link r-link text-underlined">Catalogo</a>
+                </li>
+                <li class="menu__group"><a href="/manga_catalogo.html"
+                        class="menu__link r-link text-underlined">Manga</a></li>
             </ul>
         </nav>
     </div>
-    <div>
-        <img src="/monogatari/monogatari_images/nisemonogatari.jpg" width="300px">
-        <h1 style="vertical-align:middle">Nisemonogatari</h1>
-        <p style="font-size: 21px;">Segunda temporada de la epica saga de mas de 100 capitulos y varias peliculas que no
-            te puedes perder. Enserio miralas, lo que a veces se hace un poco pesada y hay que pausar el cap porque sale
-            texto en pantalla.</p>
-    </div>
-    <div style="margin: 25px;">
-        <a href="/monogatari/bakemonogatari/bakemonogatari.html" class="button">Bakemonogatari</a>
-        <a href="/monogatari/nisemonogatari/nisemonogatari.html" class="button">Nisemonogatari</a>
-    </div>
 
-    <div style="margin-left:30px;width: 100%;margin-top: 10px;">
-
-        <span id="dots"></span>
-        <span id="more">
-
-        </span>
-    </div>
-    <div>
-        <button onclick="myFunction()" id="myBtn2">Ver Mas</button>
-    </div>
-
-    <div style="margin-top: 200px; width: 100%;">
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            /*
-            var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-            };
-            */
-            (function () { // DON'T EDIT BELOW THIS LINE
-                var d = document, s = d.createElement('script');
-                s.src = 'https://anime1080-1.disqus.com/embed.js';
-                s.setAttribute('data-timestamp', +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-                Disqus.</a></noscript>
+    <div class="page2">
+        <nav class="menu">
+            <ul>
+                <li class="menu__group">
+                    <p class="blanco titulo" style="margin-top: 40px;">Archivos</p>
+                </li>
+                <li class="menu__group"><a href="/galeria.html">
+                        <p class="blanco">Galeria</p>
+                    </a>
+                </li>
+                <li class="menu__group"><a href="/noticias.html">
+                        <p class="blanco">Noticias</p>
+                    </a>
+                </li>
+                <li class="menu__group"><a href="/xd.html">
+                        <p class="blanco">Comentarios</p>
+                    </a></li>
+            </ul>
+        </nav>
     </div>
 
-    <footer>
-        <p><strong>Hoy es un buen dia para ver K-On!!</strong></p>
+    <div class="content" style="margin: 0; padding-top: 10px;">
+        <div>
+            <img src="/monogatari/monogatari_images/nisemonogatari.jpg" width="300px"
+                style="float: right; margin-left: 20px;">
+            <h1 style="vertical-align:middle">Nisemonogatari</h1>
+            <p style="font-size: 21px;">En esta parte, Karen (La hermana mayor) se ve involucrada con un estafador que
+                la hará hacerse portadora de una enfermedad llamada "La abeja en llamas" y Tsukihi (La hermana menor) se
+                verá amenazada por una exorcista.
+            </p>
+        </div>
+        <div style="margin-top: 10px;">
+            <a href="/monogatari/bakemonogatari/bakemonogatari.html" class="button">Bakemonogatari</a>
+            <a href="/monogatari/nisemonogatari/nisemonogatari.html" class="button">Nisemonogatari</a>
+        </div>
+
+        <div>
+            <p class="titulo">Portadas</p>
+        </div>
+        <div style="margin-top: 10px;">
+            <a href="/monogatari/monogatari_images/nisemonogatari-1-cover.jpeg" target="_blank"><img
+                    src="/monogatari/monogatari_images/nisemonogatari-1-cover.jpeg" width="100px"></a>
+        </div>
+
+        <div>
+            <p class="titulo">Capitulos</p>
+        </div>
+
+        <div>
+            <a href="/monogatari/" class="cap" role="button">Episodio 1 - </a>
+            <a href="/monogatari/" class="cap" role="button">Episodio 2 - </a>
+            <a href="/monogatari/" class="cap" role="button">Episodio 3 - </a>
+            <a href="/monogatari/" class="cap" role="button">Episodio 4 - </a>
+            <a href="/monogatari/" class="cap" role="button">Episodio 5 - </a>
+            <a href="/monogatari/" class="cap" role="button">Episodio 6 - </a>
+            <span id="dots"></span>
+            <span id="more">
+            </span>
+        </div>
+
+        <div class="vermas">
+            <button onclick="myFunction()" id="myBtn2">Ver Mas</button>
+        </div>
+
+        <div style="margin-top: 200px; width: 100%;">
+            <div id="disqus_thread"></div>
+            <script>
+                /**
+                *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                /*
+                var disqus_config = function () {
+                this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                };
+                */
+                (function () { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://anime1080-1.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by
+                    Disqus.</a></noscript>
+        </div>
+    </div>
+
+    <footer style="margin: 0;">
+        <p><strong>Hoy es un buen dia!</strong></p>
         <p>Si te gusta esta pagina puede decirmelo enviando un email a:</p>
         <p><i>ramonnicolaspons@gmail.com</i></p>
         <p>Tambien puedes sugerir modificaciones y series! Solo envia un correo B)</p>
