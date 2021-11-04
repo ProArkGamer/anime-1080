@@ -94,6 +94,11 @@ div{
     font-family:Arial, Helvetica, sans-serif;
 }
 
+.pag-manga {
+    width: 1250px;
+    vertical-align: middle;
+}
+
 /* TEXTOS */
 
 .titulo{
@@ -163,21 +168,32 @@ h1 {
     margin-left: 300px;
 }
 
-/* Containers */
+/* Clases de las cartas */
 
-.card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-  }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  /* Add some padding inside the card container */
-  .container {
-    padding: 2px 16px;
-    margin: 0px;
-  }
+.panel {
+    background-color: #293241;
+    border-radius: 8px;
+    width: 90%;
+}
+
+.panel-not {
+    background-color: #ffffff;
+    border-radius: 8px;
+    width: 23%;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.img-not{
+    margin: auto;
+    width:250px;
+    display: flex;
+    border-radius: 6px;
+    padding-top: 10px;
+}
+
+.txt-not {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
