@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/index-slider-img/logo-anime1080.png">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/spoiler.css">
     <link rel="stylesheet" href="/css/menu.css">
     <link rel="stylesheet" href="/css/boton-cap.css">
+    <link rel="stylesheet" href="/css/episodio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>One Piece - Anime1080</title>
+    <title>One Piece Episodio 14 - Anime1080</title>
     <style>
         /* */
         .btn {
@@ -83,22 +83,6 @@
         #myBtn2:hover {
             background-color: #dd7370;
         }
-
-        #eastblue {
-            display: none;
-        }
-
-        #alabasta {
-            display: none;
-        }
-
-        #isla {
-            display: none;
-        }
-
-        #water7 {
-            display: none;
-        }
     </style>
 </head>
 
@@ -163,58 +147,30 @@
                     src="/one-piece/op-img/one-piece-22-cover.jpg" width="100px"></a>
         </div>
 
-        <div class="alerta">
-            <p class="blanco" style="padding: 10px; text-align: center; padding-bottom: 0;">!! IMPORTANTE !!</p>
-            <p class="blanco" style="padding: 10px; padding-top: 0; padding-bottom: 20px;">Este reproductor de video
-                contiene anuncios <b>+18</b>, recomiendo utilizar el Adblock en toda la serie de One Piece. Seria de
-                gran ayuda que al salir desactivases el adblock ya que en el resto de paginas no existe esta publicidad
-                molesta e intrusiva. Gracias. Si quieres saber como instalar el Adblock haz click <a
-                    href="/index-slider-img/Como instalar Adblock.pdf" download="">aquí.</a></p>
-        </div>
-
         <div>
             <p class="titulo">Capitulos</p>
         </div>
 
         <div>
-            <button onclick="eastBlue()" class="volver">Saga de East Blue</button>
-            <button onclick="alabasta()" class="volver">Saga de Alabasta</button>
-            <button onclick="isla()" class="volver">Saga de la Isla del Cielo</button>
-            <button onclick="water7()" class="volver">Saga de Water Seven</button>
+            <a href="/one-piece/one-p.html" class="volver" role="button">Lista de Capitulos</a>
         </div>
 
-        <!-- Capitulos -->
-
-        <div id="water7">
-            <a href="" class="cap" role="button">Water Seven</a>
+        <div>
+            <table class="episodio">
+                <tr class="header" style>
+                    <th>
+                        <p>One Piece (One Pace) - Cap 14 (42-22)</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td> <IFRAME SRC="https://www.mp4upload.com/embed-blsn01ifc9ee.html" FRAMEBORDER=0 MARGINWIDTH=0
+                            MARGINHEIGHT=0 SCROLLING=NO WIDTH=720 HEIGHT=405 allowfullscreen></IFRAME>
+                    </td>
+                </tr>
+            </table>
+            <a href="/one-piece/op-ep/ep13.html" class="button sig">&#8249;</a>
+            <a href="/one-piece/op-ep/ep15.html" class="button sig">&#8250;</a>
         </div>
-
-        <div id="isla">
-            <a href="" class="cap" role="button">Isla del Cielo</a>
-        </div>
-
-        <div id="alabasta">
-            <a href="" class="cap" role="button">Alabasta</a>
-        </div>
-
-        <div id="eastblue">
-            <a href="/one-piece/op-ep/ep14.html" class="cap" role="button">Episodio 14 - Episodios 42-22</a>
-            <a href="/one-piece/op-ep/ep13.html" class="cap" role="button">Episodio 13 - Episodios 40-41</a>
-            <a href="/one-piece/op-ep/ep12.html" class="cap" role="button">Episodio 12 - Episodios 35-39</a>
-            <a href="/one-piece/op-ep/ep11.html" class="cap" role="button">Episodio 11 - Episodios 31-34</a>
-            <a href="/one-piece/op-ep/ep10.html" class="cap" role="button">Episodio 10 - Episodios 28-30</a>
-            <a href="/one-piece/op-ep/ep9.html" class="cap" role="button">Episodio 9 - Episodios 26-27</a>
-            <a href="/one-piece/op-ep/ep8.html" class="cap" role="button">Episodio 8 - Episodios 23-25</a>
-            <a href="/one-piece/op-ep/ep7.html" class="cap" role="button">Episodio 7 - Episodios 19-21</a>
-            <a href="/one-piece/op-ep/ep6.html" class="cap" role="button">Episodio 6 - Episodios 12-19</a>
-            <a href="/one-piece/op-ep/ep5.html" class="cap" role="button">Episodio 5 - Episodios 8-11</a>
-            <a href="/one-piece/op-ep/ep4.html" class="cap" role="button">Episodio 4 - Episodios 6-7</a>
-            <a href="/one-piece/op-ep/ep3.html" class="cap" role="button">Episodio 3 - Episodios 3-5</a>
-            <a href="/one-piece/op-ep/ep2.html" class="cap" role="button">Episodio 2 - Episodio 2</a>
-            <a href="/one-piece/op-ep/ep1.html" class="cap" role="button">Episodio 1 - Episodio 1</a>
-        </div>
-
-        <!-- Fin Capitulos -->
 
         <div style="margin-top: 200px; width: 100%;">
             <div id="disqus_thread"></div>
@@ -288,52 +244,5 @@
     </script>
 
 </body>
-
-<!-- Botones Sagas -->
-
-<script>
-    function eastBlue() {
-        var x = document.getElementById("eastblue");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
-
-<script>
-    function alabasta() {
-        var x = document.getElementById("alabasta");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
-
-<script>
-    function isla() {
-        var x = document.getElementById("isla");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
-
-<script>
-    function water7() {
-        var x = document.getElementById("water7");
-        if (x.style.display === "block") {
-            x.style.display = "none";
-        } else {
-            x.style.display = "block";
-        }
-    }
-</script>
-
 
 </html>
