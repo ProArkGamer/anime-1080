@@ -128,10 +128,16 @@ DEPENDENCES
 
   .page2{
     box-sizing: border-box;
-    width: 20%;
+    width: 23%;
     color: white;
     float: right;
-    min-height: 100%;
-    background-color: #293241;
+    /*background-color: #293241;*/
     text-align: center;
+  }
+
+  .derecha {
+    width: 100%;
+    color: white;
+    background-color: #ffffff;
+    padding-top: 20px;
   }
