@@ -124,6 +124,7 @@ DEPENDENCES
     width: auto;
     margin: auto;
     color: white;
+    box-shadow: 0 5px 20px 3px rgba(255, 255, 255, 0.6);
   }
 
   .page2{
@@ -131,13 +132,14 @@ DEPENDENCES
     width: 23%;
     color: white;
     float: right;
-    /*background-color: #293241;*/
+    background-color: rgb(255, 252, 241);
     text-align: center;
+    margin-top: 40px;
+    margin-right: 10px;
   }
 
   .derecha {
     width: 100%;
     color: white;
     background-color: #ffffff;
-    padding-top: 20px;
   }

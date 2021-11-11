@@ -1,3 +1,7 @@
+@media screen and (max-width: 411px) {
+
+}
+
 /* BOTONES GLOBALES */
 
 .button {
@@ -20,7 +24,7 @@
 
 /* CABECERA INDEX 1 */
 .image-fondo {
-    background-image: url("../index-slider-img/foto3.jpg");
+    background-image: url("../index-slider-img/eva-foto.jpg");
     margin-bottom: 0px;
 
 }
@@ -54,13 +58,13 @@
 
 body{
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 252, 241);
     width: 100%;
 
 }
 
 .content {
-    background-color: #fff;
+    background-color: rgb(255, 252, 241);
     padding-top: 10px;
     width: 80%;
     margin: 0 auto;
@@ -122,6 +126,10 @@ h1 {
     padding-bottom: 25px;
 }
 
+.grande {
+    font-size: 30px;
+}
+
 /* Botones */
 
 .volver {
@@ -172,9 +180,11 @@ h1 {
 /* Clases de paneles */
 
 .panel {
-    background-color: #293241;
+    background-color: #48566d;
+    /*background-color: #293241;*/
     border-radius: 8px;
     width: 80%;
+    box-shadow: 0 5px 20px 3px #4e5d77;
 }
 
 .alerta {
