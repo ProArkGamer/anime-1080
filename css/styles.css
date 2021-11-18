@@ -1,5 +1,7 @@
 @media screen and (max-width: 411px) {
-
+    .desc {
+        font-size: 5px;
+    }
 }
 
 /* BOTONES GLOBALES */
@@ -24,7 +26,7 @@
 
 /* CABECERA INDEX 1 */
 .image-fondo {
-    background-image: url("../index-slider-img/eva-foto.jpg");
+    background-image: url("../index-slider-img/yagakimi-1500x500.jpg");
     margin-bottom: 0px;
 
 }
@@ -35,12 +37,18 @@
   text-align: left;
   vertical-align: middle;
   text-shadow: rgba(17, 17, 17, 0.473) 10px 10px 10px;
-  font-size: 52px;
+  font-size: 22px;
+}
+
+.h1-name {
+    color: #f1e9e9;
+    -webkit-text-stroke: 2px rgb(182, 182, 182);
+    font-size: 150px;
 }
 
 /* CABECERA INDEX 2 */
 .image-fondo-2 {
-      background-image: url("../index-slider-img/campo_soleado.jpg");
+      background-image: url("https://drive.google.com/uc?export=view&id=1axenfjZWf_uWAxpaxpYAAPh7AGxlwExk");
       margin-bottom: 10px;
       margin-top: 100px;
   }
@@ -102,6 +110,10 @@ div{
 .pag-manga {
     width: 1250px;
     vertical-align: middle;
+}
+
+.img-gal {
+    width: 30%;
 }
 
 /* TEXTOS */
@@ -180,7 +192,7 @@ h1 {
 /* Clases de paneles */
 
 .panel {
-    background-color: #48566d;
+    background-color: #404d61;
     /*background-color: #293241;*/
     border-radius: 8px;
     width: 80%;
@@ -203,7 +215,8 @@ div.gallery {
     margin: 15px;
     border-top: 1px solid #ccc;
     display: inline-block;
-    width: 210px;
+    width: 21%;
+    max-width: 500px;
     background-color: white;
     border-radius: 8px;
   }
@@ -214,8 +227,8 @@ div.gallery {
   
   div.gallery img {
     width: 100%;
-    height: 250px;
     border-radius: 8px;
+    max-width: 500px;
   }
   
   div.desc {
