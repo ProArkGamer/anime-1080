@@ -121,8 +121,9 @@ div{
 }
 
 .pag-manga {
-    width: 1250px;
+    width: 1550px;
     vertical-align: middle;
+    margin: 0 auto;
 }
 
 .img-gal {
