@@ -4,10 +4,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="/index-slider-img/logo-anime1080.png">
-    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/menu.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6034283440603777"
-     crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Catalogo</title>
     <style>
         #myInput {
@@ -24,7 +24,7 @@
         #myTable {
             border-collapse: collapse;
             width: 80%;
-            border: 1px solid #ddd;
+            border: 1px solid rgb(255, 255, 255);
             font-size: 18px;
         }
 
@@ -39,40 +39,320 @@
         }
 
         #myTable tr.header {
-            background-color: #3e4a5f;
+            background-color: #ffffff;
             /*background-color: #fff4dd;*/
-        }
-
-        #myTable tr:hover {
-            background-color: #fff4dd;
         }
     </style>
 </head>
 
 <body>
-    <div class="page">
-        <nav class="page__menu menu">
-            <ul class="menu__list r-list">
-                <li class="menu__group"><a href="/index.html" class="menu__link r-link text-underlined">Inicio</a></li>
-                <li class="menu__group"><a href="/catalogo.html" class="menu__link r-link text-underlined">Catalogo</a>
-                </li>
-                <li class="menu__group"><a href="/manga_catalogo.html"
-                        class="menu__link r-link text-underlined">Manga</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="page">
+            <nav class="page__menu menu">
+                <ul class="menu__list r-list">
+                    <li class="menu__group"><a href="/index.html" class="menu__link r-link text-underlined">Inicio</a>
+                    </li>
+                    <li class="menu__group"><a href="/catalogo.html"
+                            class="menu__link r-link text-underlined">Catalogo</a>
+                    </li>
+                    <li class="menu__group"><a href="/manga_catalogo.html"
+                            class="menu__link r-link text-underlined">Manga</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="page2">
+            <!--
+    <div class="derecha">
+        <iframe src="https://discord.com/widget?id=907350526667153409&theme=dark" width="350" height="500"
+            allowtransparency="true" frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+    -->
+            <div class="derecha panel backwhite panelrem">
+                <p class="grande">En Emisión</p>
+                <table style="padding-top: 20px; margin: 0;">
+                    <tr>
+                        <th>
+                        </th>
+                        <th>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td style="padding-left: 15px;">
+                            <a href="/one-piece/one-p.html"><img src="/index-slider-img/bot-play.png" width="25px"></a>
+                        </td>
+                        <td style="padding-bottom: 7px; padding-left: 5px; padding-top: 5px">
+                            <a href="/one-piece/one-p.html">
+                                <p style="text-align: left; margin-bottom: 0;">One Piece (One Pace)</p>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding-left: 15px;">
+                            <a href="/k-on/k-on-season2.html"><img src="/index-slider-img/bot-play.png"
+                                    width="25px"></a>
+                        </td>
+                        <td style="padding-bottom: 7px; padding-left: 5px; padding-top: 5px">
+                            <a href="/k-on/k-on-season2.html">
+                                <p style="text-align: left; margin-bottom: 0;">K-On!!</p>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding-left: 15px;">
+                            <a href="/sora-yorimo-tooi-basho/sora_yori.html"><img src="/index-slider-img/bot-play.png"
+                                    width="25px"></a>
+                        </td>
+                        <td style="padding-bottom: 7px; padding-left: 5px; padding-top: 5px">
+                            <a href="/sora-yorimo-tooi-basho/sora_yori.html">
+                                <p style="text-align: left; margin-bottom: 0;">Sora Yori mo toi basho</p>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding-left: 15px;">
+                            <a href="/sora-yorimo-tooi-basho/sora_yori.html"><img src="/index-slider-img/bot-play.png"
+                                    width="25px"></a>
+                        </td>
+                        <td style="padding-bottom: 7px; padding-left: 5px; padding-top: 5px;">
+                            <a href="/violet/violet.html">
+                                <p style="text-align: left; margin-bottom: 0;">Violet Evergarden</p>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+            <div class="derecha panel panelrem" style="margin-top: 50px; background-color: rgb(228, 92, 92);">
+                <p class="grande" style="color: white;">Galeria</p>
+                <div>
+                    <a href="galeria.html" class="button2" style="width: 80%;">
+                        <p style="margin: 0; padding: 0;">Visitar la Galeria</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="content">
+
+        <div style="margin-top: 20px;">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Buscar por nombre..."
+                title="Escribe un nombre">
+        </div>
+        <div>
+            <table id="myTable">
+                <tr class="header">
+                    <th style="width: 60%;">
+                    </th>
+                    <th style="width: 40%;">
+                    </th>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Violet Evergarden</strong>
+                        </p>
+                    </td>
+                    <td><a href="/violet/violet.html"><img
+                                src="https://drive.google.com/uc?export=view&id=1fWPLW705amDGMgibq3P8JtEDD2JQp3Y3"
+                                class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                One Piece (One Pace)</strong>
+                        </p>
+                    </td>
+                    <td><a href="/one-piece/one-p.html"><img src="/one-piece/op-img/one-piece-anime-cover.jpg"
+                                class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Naruto</strong>
+                        </p>
+                    </td>
+                    <td><a href="/naruto/naruto.html"><img src="/naruto/naruto-img/naruto-cover.jpg" class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Specials Kimetsu No Yaiba</strong>
+                        </p>
+                    </td>
+                    <td><a href="/kimetsu/kimetsu-1.html"><img src="/kimetsu/kimetsu-img/kimetsu_season1_portada.png"
+                                class="imgal"></a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Sora Yorimo Tooi Basho</strong>
+                        </p>
+                    </td>
+                    <td><a href="/sora-yorimo-tooi-basho/sora_yori.html"><img
+                                src="/sora-yorimo-tooi-basho/sora-yori-img/sora_yori_portada.jpg" class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Kimetsu no Yaiba Season 2</strong>
+                        </p>
+                    </td>
+                    <td><a href="/kimetsu/kimetsu.html"><img src="/kimetsu/kimetsu-img/kimetsu_portada.jpg"
+                                class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Serial Experiments Lain</strong>
+                        </p>
+                    </td>
+                    <td><a href="/serial-experiments-lain/serial_exp_lain.html"><img
+                                src="/serial-experiments-lain/serial-exp-lain-img/serial_experiment_lain_cover.jpg"
+                                class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Steins; Gate</strong>
+                        </p>
+                    </td>
+                    <td><a href="/steins-gate/steins_gate.html"><img
+                                src="/steins-gate/steins-gate-img/Steins_Gate_portada.jpeg" class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Made in Abyss: Fukaki Tamashii no Reimei</strong>
+                        </p>
+                    </td>
+                    <td><a href="/made-in-abyss/mia-movie.html"><img
+                                src="/made-in-abyss/made-in-abyss images/made_in_abyss_movie.jpg" class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Liz to Aoi Tori</strong>
+                        </p>
+                    </td>
+                    <td><a href="/liz-to-aoi-tori/liz_to_aoi_tori.html"><img
+                                src="/liz-to-aoi-tori/liz_to_aoi_tori_img/liz_to_aoi_tori.jpg" class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                K-On!</strong>
+                        </p>
+                    </td>
+                    <td><a href="k-on/k-on.html"><img src="/k-on/k-on images/k-on 1.jpg" class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>Bakemonogatari</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <a href="monogatari/bakemonogatari/bakemonogatari.html"><img
+                                src="/monogatari/monogatari_images/Bakemonogatari_cover.jpg" class="imgal">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Made in Abyss</strong>
+                        </p>
+                    </td>
+                    <td><a href="made-in-abyss/mia.html"><img
+                                src="made-in-abyss/made-in-abyss images/made-in-abyss-anime-cover.jpg"
+                                class="imgal"></a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                K-On! The Movie</strong>
+                        </p>
+                    </td>
+                    <td><a href="k-on/k-on-movie.html"><img src="/k-on/k-on images/k-on-the-movie.jpg"
+                                class="imgal"></a></td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>Nisemonogatari</strong>
+                        </p>
+                    </td>
+                    <td>
+                        <a href="/monogatari/nisemonogatari/nisemonogatari.html"><img
+                                src="/monogatari/monogatari_images/nisemonogatari.jpg" class="imgal">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                Haruhi Suzumiya no Yuuta</strong>
+                        </p>
+                    </td>
+                    <td><a href="haruhi_suzumiya/haruhi_suzumiya.html"><img
+                                src="/haruhi_suzumiya/haruhi_suzumiya_images/haruhi-anime-cover.jpg" class="imgal"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <strong>
+                                K-On!!</strong>
+                        </p>
+                    </td>
+                    <td><a href="k-on/k-on-season2.html"><img src="/k-on/k-on images/k-on!!-cover.jpg"
+                                class="imgal"></a>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
     </div>
 
-    <div class="page2">
-        <!--
-        <div class="derecha">
-            <iframe src="https://discord.com/widget?id=907350526667153409&theme=dark" width="350" height="500"
-                allowtransparency="true" frameborder="0"
-                sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-        -->
-        <div class="derecha panel backwhite">
+    <div class="panelpeq">
+        <div class=" panel panelpeq2">
             <p class="grande">En Emisión</p>
-            <table style="padding-top: 20px;">
+            <table style="padding-top: 20px; margin: 0;">
                 <tr>
                     <th>
                     </th>
@@ -128,234 +408,14 @@
 
             </table>
         </div>
-    </div>
 
-    <div class="content">
-
-        <div>
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Busca por nombres..."
-                title="Escribe un nombre">
-        </div>
-        <div>
-            <table id="myTable">
-                <tr class="header">
-                    <th style="width: 60%;">
-                        <p style="text-align:center; font-size: 20px; color: white;">Nombre</p>
-                    </th>
-                    <th style="width: 40%;">
-                        <p style="text-align:center; font-size: 20px; color: white;">Portada <i>(Click en la foto para entrar)<i>
-                                </p>
-                    </th>
-                    
-                </tr>
-
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Violet Evergarden</strong>
-                        </p>
-                    </td>
-                    <td><a href="/violet/violet.html"><img src="https://drive.google.com/uc?export=view&id=1fWPLW705amDGMgibq3P8JtEDD2JQp3Y3"
-                                style="height: 400px;"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                One Piece (One Pace)</strong>
-                        </p>
-                    </td>
-                    <td><a href="/one-piece/one-p.html"><img src="/one-piece/op-img/one-piece-anime-cover.jpg"
-                                style="height: 400px;"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Naruto</strong>
-                        </p>
-                    </td>
-                    <td><a href="/naruto/naruto.html"><img src="/naruto/naruto-img/naruto-cover.jpg"
-                                style="height: 400px;"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Specials Kimetsu No Yaiba</strong>
-                        </p>
-                    </td>
-                    <td><a href="/kimetsu/kimetsu-1.html"><img src="/kimetsu/kimetsu-img/kimetsu_season1_portada.png"
-                                style="height: 400px;"></a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Sora Yorimo Tooi Basho</strong>
-                        </p>
-                    </td>
-                    <td><a href="/sora-yorimo-tooi-basho/sora_yori.html"><img
-                                src="/sora-yorimo-tooi-basho/sora-yori-img/sora_yori_portada.jpg"
-                                style="height: 400px;"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Kimetsu no Yaiba Season 2</strong>
-                        </p>
-                    </td>
-                    <td><a href="/kimetsu/kimetsu.html"><img src="/kimetsu/kimetsu-img/kimetsu_portada.jpg"
-                                style="height: 400px;"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Serial Experiments Lain</strong>
-                        </p>
-                    </td>
-                    <td><a href="/serial-experiments-lain/serial_exp_lain.html"><img
-                                src="/serial-experiments-lain/serial-exp-lain-img/serial_experiment_lain_cover.jpg"
-                                style="height: 400px;"></a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Steins; Gate</strong>
-                        </p>
-                    </td>
-                    <td><a href="/steins-gate/steins_gate.html"><img
-                                src="/steins-gate/steins-gate-img/Steins_Gate_portada.jpeg" style="height: 400px;"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Made in Abyss: Fukaki Tamashii no Reimei</strong>
-                        </p>
-                    </td>
-                    <td><a href="/made-in-abyss/mia-movie.html"><img
-                                src="/made-in-abyss/made-in-abyss images/made_in_abyss_movie.jpg"
-                                style="height: 400px;"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Liz to Aoi Tori</strong>
-                        </p>
-                    </td>
-                    <td><a href="/liz-to-aoi-tori/liz_to_aoi_tori.html"><img
-                                src="/liz-to-aoi-tori/liz_to_aoi_tori_img/liz_to_aoi_tori.jpg"
-                                style="height: 400px;"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                K-On!</strong>
-                        </p>
-                    </td>
-                    <td><a href="k-on/k-on.html"><img src="/k-on/k-on images/k-on 1.jpg" style="height: 400px;"></a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>Bakemonogatari</strong>
-                        </p>
-                    </td>
-                    <td>
-                        <a href="monogatari/bakemonogatari/bakemonogatari.html"><img
-                                src="/monogatari/monogatari_images/Bakemonogatari_cover.jpg" style="height: 400px;">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Made in Abyss</strong>
-                        </p>
-                    </td>
-                    <td><a href="made-in-abyss/mia.html"><img
-                                src="made-in-abyss/made-in-abyss images/made-in-abyss-anime-cover.jpg"
-                                style="height: 400px;"></a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                K-On! The Movie</strong>
-                        </p>
-                    </td>
-                    <td><a href="k-on/k-on-movie.html"><img src="/k-on/k-on images/k-on-the-movie.jpg"
-                                style="height: 400px;"></a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>Nisemonogatari</strong>
-                        </p>
-                    </td>
-                    <td>
-                        <a href="/monogatari/nisemonogatari/nisemonogatari.html"><img
-                                src="/monogatari/monogatari_images/nisemonogatari.jpg" style="height: 400px;">
-                    </td>
-
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px; text-align: center; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                Haruhi Suzumiya no Yuuta</strong>
-                        </p>
-                    </td>
-                    <td><a href="haruhi_suzumiya/haruhi_suzumiya.html"><img
-                                src="/haruhi_suzumiya/haruhi_suzumiya_images/haruhi-anime-cover.jpg"
-                                style="height: 400px; padding: 15px"></a></td>
-                </tr>
-                <tr>
-                    <td>
-                        <p
-                            style="font-size: 24px;text-align: center ;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-                            <strong>
-                                K-On!!</strong>
-                        </p>
-                    </td>
-                    <td><a href="k-on/k-on-season2.html"><img src="/k-on/k-on images/k-on!!-cover.jpg"
-                                style="height: 400px;"></a>
-                    </td>
-                </tr>
-
-            </table>
+        <div class="panel panelpeq2" style="margin-top: 50px; background-color: rgb(228, 92, 92);">
+            <p class="grande blanco" style="margin: 0; padding-bottom: 0; padding-left: 10;">Galeria</p>
+            <div>
+                <a href="galeria.html" class="button2" style="width: 90%;">
+                    <p style="margin: 0; padding: 0;">Visitar la Galeria</p>
+                </a>
+            </div>
         </div>
     </div>
 

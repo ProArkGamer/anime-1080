@@ -120,15 +120,6 @@ div{
     font-family:Arial, Helvetica, sans-serif;
 }
 
-.pag-manga {
-    width: 1550px;
-    vertical-align: middle;
-    margin: 0 auto;
-}
-
-.img-gal {
-    width: 30%;
-}
 
 /* TEXTOS */
 
@@ -148,8 +139,7 @@ h1 {
 
 .blanco {
     color: white;
-    margin-top: 25px;
-    padding-bottom: 25px;
+
 }
 
 .grande {
@@ -235,6 +225,10 @@ h1 {
     padding: 10px;
 }
 
+.panelpeq {
+    display: none;
+}
+
 /* COCK0 */
 div.gallery {
     margin: 15px;
@@ -262,9 +256,26 @@ div.gallery {
     text-align: center;
   }
 
-  @media screen and (max-width: 411px) {
+  /* IMAGENES */
+
+  .imgal {
+    width: 80%;
+}
+
+.pag-manga {
+    width: 1550px;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+.img-gal {
+    width: 30%;
+}
+
+
+  @media screen and (max-width: 550px) {
     p {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     div.desc {
@@ -274,11 +285,12 @@ div.gallery {
 
     .titulo{
         margin-top: 20px;
-        font-size: 15px;
+        font-size: 18px;
     }
 
     .grande {
         font-size: 15px;
+        padding: 5px;
     }
 
     .bot-play {
@@ -289,7 +301,7 @@ div.gallery {
         margin: 15px;
         border-top: 1px solid #ccc;
         display: inline-block;
-        width: 30%;
+        width: 35%;
         max-width: 500px;
         background-color: white;
         border-radius: 8px;
@@ -298,9 +310,68 @@ div.gallery {
     .panel {
         background-color: #ffffff;
         border-radius: 5px;
-        width: 60%;
-        margin: 0;
+        width: 100%;
+        margin: 0 auto;
+        margin-left: 20px;
+        padding: 0;
         box-shadow: 0 5px 20px 3px #4e5d778f;
     }
 
-}
+    .panelrem {
+         display: none;
+         width: 0%;
+    }
+
+    .panelpeq {
+        display:initial;
+    }
+
+    .img-ep {
+        width: 200px;
+
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .imgal {
+        width: 120px;
+    }
+
+    .panelpeq2 {
+        width: 90%;
+    }
+
+    .pag-manga {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .mangasig {
+        margin-left: 30px;
+    }
+
+    a{
+        font-size: 9px;
+    }
+
+    iframe {
+        width: 300px;
+        height: 192px;
+    }
+
+    .volver {
+        width: 80%;
+    }
+
+    .alerta {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cap {
+        width: 80%;
+    }
+}   
+
