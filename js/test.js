@@ -1,5 +1,5 @@
 function GetData() {
-    client.open("GET", "https://api.jsonbin.io/b/621ac0a824f17933e49fab0c");
+    client.open("GET", "https://api.npoint.io/f97cae270c3ec20d3543");
     client.send();
 }
 
