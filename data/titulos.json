@@ -1,0 +1,32 @@
+[
+    {
+        "img":"haruhi-suzumiya-portada.jpg",
+        "titulo":"Haruhi Suzumiya",
+        "episodios":"26",
+        "carpeta":"/haruhi_suzumiya/haruhi_suzumiya.html"
+    },
+    {
+        "img":"steins-gate-portada.jpg",
+        "titulo":"Steins; Gate",
+        "episodios":"24",
+        "carpeta":"/steins-gate/steins_gate.html"
+    },
+    {
+        "img":"serial-experiment-lain-portada.jpg",
+        "titulo":"Serial Exp Lain",
+        "episodios":"13",
+        "carpeta":"/serial-experiments-lain/serial_exp_lain.html"
+    },
+    {
+        "img":"made-in-abyss-portada.jpg",
+        "titulo":"Made in Abyss",
+        "episodios":"13",
+        "carpeta":"/made-in-abyss/mia.html"
+    },
+    {
+        "img":"houseki-portada.jpg",
+        "titulo":"Houseki no Kuni",
+        "episodios":"12",
+        "carpeta":"/houseki/hnk.html"
+    }
+]

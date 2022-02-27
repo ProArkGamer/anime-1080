@@ -1,0 +1,26 @@
+.fotoProducte {
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.individual{
+    border: 1px solid black;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.descripcio {
+    padding: 5px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.info {
+    padding-left: 10px;
+    font-weight: bold;
+    color: green;
+}
